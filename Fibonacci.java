@@ -1,22 +1,20 @@
 public class Fibonacci {
 
     public static int fibonacci(int n) {
-        Scanner sc = new Scanner(System.in);
-        int num;
-        int f1;
-        int f2;
-        int cont;
-        do {
-            System.out.print("Introduce un numero");
-            num = sc.nextInt();
-        }
-        for(cont=2;i<=numero;cont++){
-            f2 = f1 + f2;
-            f1 = f2 - f1;
-
-        }
-System.out.println();
-
+    //Variables
+    int cero = 0;
+    int uno = 1;
+    int contador = 0;
+    int fn = n - 2;
+    int fn1 = n - 1;
+    //Si Fibn = Fib0 entonces sera 0.... 0 + 0 = 0
+    if (n == cero) return cero;
+    //Si Fibn = Fib1 entonces sera 1.... 0 + 1 = 1
+    else if(n == uno)  return uno;
+    // Si n es diferente a 1 y 0, entoces ya se operra Fibonacci
+    //La cual es Fibonacci(n) = fibonacci(n-2) + fibonacci(n-1)
+    else 
+      return fibonacci(fn) + fibonacci(fn1) ;
     }
 
     // NO MODIFICAR A PARTIR DE AQUI
